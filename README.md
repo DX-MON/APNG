@@ -4,6 +4,7 @@
 The goal of this library is to provide a very simple API for reading and using frames from an APNG file.
 
 [![Build Status](https://travis-ci.org/DX-MON/APNG.svg?branch=master)](https://travis-ci.org/DX-MON/APNG)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDX-MON%2FAPNG.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FDX-MON%2FAPNG?ref=badge_shield)
 
 ## Building the library
 
@@ -32,3 +33,7 @@ At this point, the frame data will be available by calling pngFile.frames(), wit
 
 To free all resources consumed by this operation, simply let apng_t go out of scope, or if you used new to allocate your instance, just call delete on the instance, though you should have used std::unique_ptr<>.
 *DO NOTE*: all frame data returned by frames() will be invalidated and you must stop using the pointers, after allowing apng_t to go out of scope.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDX-MON%2FAPNG.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FDX-MON%2FAPNG?ref=badge_large)
